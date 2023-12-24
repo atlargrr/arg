@@ -1,0 +1,72 @@
+<!DOCTYPE html >
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> um </title>
+
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            width: 100%;
+            height: 100%;
+            background-color: gray;
+        }
+
+        form{
+            width: 300px;
+            margin: 100px auto;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+
+        input{
+            display: block;
+            margin: 10px auto;
+            width: 250px;
+            height: 30px;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+
+    <form>
+
+        <h3>o fogo guarda memorias, nascimentos, mortes, gritos, medos</h3>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Inquisi%C3%A7%C3%A3o.jpg" alt="">
+        <input type="text" placeholder="resposta" id="resposta">
+
+        <input type="submit" onclick="logar(); return false">
+
+    </form>
+
+
+    <script>
+
+
+        function logar(){
+
+            var resposta = document.getElementById('resposta').value;
+            if(resposta == "inquisicao" ){
+                alert('Sucesso');
+                location.href = "tres.html";
+            }else{
+                alert('resposta incorrta');
+            }
+
+        }
+
+    </script>
+
+
+</body>
+</html>
